@@ -1,0 +1,58 @@
+/* forms */
+
+form{margin:0; padding:0; border:none;}
+input, textarea, select, button{font-size:14px; color:black; font-family:Verdana,  Arial, Tahoma, Helvetica, sans-serif;}
+
+fieldset {  padding: .35em .625em .75em;   margin: 0 2px;   border: 1px solid #c0c0c0; }
+legend {   padding:5px;  color:#999;   border: 0; }
+textarea {   overflow: auto; }
+optgroup {   font-weight: bold; }
+
+/* ---------------------------------------------- main forms -------------------------------------*/
+.form-control {
+height: 32px; display:inline-block; vertical-align:middle; min-width:200px;;
+padding: 3px 5px;line-height: 1.4;color: #555;
+background-color: #fff;
+background-image: none;
+width:100%;
+border: 1px solid #ccc;border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+-webkit-transition: border-color ease-in-out .1s, box-shadow ease-in-out .1s;
+-o-transition: border-color ease-in-out .1s, box-shadow ease-in-out .1s;
+transition: border-color ease-in-out .1s, box-shadow ease-in-out .1s;	  
+}
+textarea.form-control{min-height:100px; height:auto}
+
+.form-control::-moz-placeholder {  color: #999;   opacity: 1;}
+.form-control:-ms-input-placeholder {  color: #999;}
+.form-control::-webkit-input-placeholder {  color: #999;}
+
+textarea:hover, input[type="text"]:hover, input[type="email"]:hover, input[type="password"]:hover, input[type="number"]:hover, input[type="file"]:hover,  select:hover {
+border:1px solid #66afe9;
+}
+textarea:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="file"]:focus,  select:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+/* ------------------- my custom styles ------------------------- */
+.contact-left{width:40%; float:left; padding:5px;}
+	.contact-left input{height:38px}
+.contact-right{width:60%; float:right; padding:5px;}
+	.contact-right textarea{height:140px;}
+
+.btn-send{padding:7px 30px;
+font-size: 14px;
+cursor: pointer;
+font-weight: 700; width: 100%;
+}
+
+.btn-send:hover{background:#ddd;
+    border:2px solid rgb(211, 67, 70);
+    color:#333;
+    transition: all 0.5s ease 0s;
+}
+
+
