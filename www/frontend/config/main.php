@@ -30,6 +30,10 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'assetManager' => [
+            'class' => 'yii\web\AssetManager',
+            'forceCopy' => false,          
+        ],
         // 'assetManager' => [
         //     'bundles' => [
         //         'yii\web\JqueryAsset' => [
