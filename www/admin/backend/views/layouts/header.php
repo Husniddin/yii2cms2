@@ -35,8 +35,7 @@ use yii\bootstrap\NavBar;
                                 <li><!-- start message -->
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="img-circle"
-                                                 alt="User Image"/>
+                                            <?= Html::img('/vendor/bower/admin-lte/dist/img/user2-160x160.jpg', ['class'=>'img-circle', 'alt' => 'User Image']) ?>
                                         </div>
                                         <h4>
                                             Support Team
@@ -49,8 +48,7 @@ use yii\bootstrap\NavBar;
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user3-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
+                                            <?= Html::img('/vendor/bower/admin-lte/dist/img/user2-160x160.jpg', ['class'=>'img-circle', 'alt' => 'User Image']) ?>
                                         </div>
                                         <h4>
                                             AdminLTE Design Team
@@ -62,8 +60,7 @@ use yii\bootstrap\NavBar;
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user4-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
+                                            <?= Html::img('/vendor/bower/admin-lte/dist/img/user2-160x160.jpg', ['class'=>'img-circle', 'alt' => 'User Image']) ?>
                                         </div>
                                         <h4>
                                             Developers
@@ -75,8 +72,7 @@ use yii\bootstrap\NavBar;
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user3-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
+                                            <?= Html::img('/vendor/bower/admin-lte/dist/img/user2-160x160.jpg', ['class'=>'img-circle', 'alt' => 'User Image']) ?>
                                         </div>
                                         <h4>
                                             Sales Department
@@ -88,8 +84,7 @@ use yii\bootstrap\NavBar;
                                 <li>
                                     <a href="#">
                                         <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user4-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
+                                            <?= Html::img('/vendor/bower/admin-lte/dist/img/user2-160x160.jpg', ['class'=>'img-circle', 'alt' => 'User Image']) ?>
                                         </div>
                                         <h4>
                                             Reviewers
@@ -231,15 +226,13 @@ use yii\bootstrap\NavBar;
 
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+                        <?= Html::img('/vendor/bower/admin-lte/dist/img/user2-160x160.jpg', ['class'=>'user-image', 'alt' => 'User Image']) ?>
                         <span class="hidden-xs">Alexander Pierce</span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="img-circle"
-                                 alt="User Image"/>
-
+                            <?= Html::img('/vendor/bower/admin-lte/dist/img/user2-160x160.jpg', ['class'=>'img-circle', 'alt' => 'User Image']) ?>
                             <p>
                                 Alexander Pierce - Web Developer
                                 <small>Member since Nov. 2012</small>

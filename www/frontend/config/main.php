@@ -31,8 +31,9 @@ return [
             'errorAction' => 'site/error',
         ],
         'assetManager' => [
-            'class' => 'yii\web\AssetManager',
-            'forceCopy' => false,          
+            'bundles' => false, // Bu Yii ning css va js larini ulash uchun xizmat qiladi.
+            // 'class' => 'yii\web\AssetManager',
+            // 'forceCopy' => false,          
         ],
         // 'assetManager' => [
         //     'bundles' => [

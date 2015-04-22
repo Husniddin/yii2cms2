@@ -55,6 +55,9 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+        'assetManager' => [
+            'bundles' => false, // Bu Yii ning css va js larini ulash uchun xizmat qiladi.
+        ],
         // 'view' => [
         //      'theme' => [
         //          'pathMap' => [
