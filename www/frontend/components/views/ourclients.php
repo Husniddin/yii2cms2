@@ -1,3 +1,6 @@
+<?php
+    use yii\helpers\Html;
+?>
 <div class="blok-title text-center">
     <h2 class="text-title">Our clients From OurClientsWidget</h2>
     <h3 class="text-lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <br> sed diem nonummy nibh euismod tincidunt ut lacreet</h3>
@@ -9,25 +12,19 @@
     <div class="slide-clients">
     
     <ul>
-        <li> <div class="img-holder"><img src="fotos/p1.jpg"></div> 
-            <h5 class="title">Heading for Lorem</h5> 
-            <p>...</p> </li>
-        <li> <div class="img-holder"><img src="fotos/p2.jpg"></div> 
-            <h5 class="title">Heading for Lorem</h5> 
-            <p>...</p> </li>
-        </li>
-        <li> <div class="img-holder"><img src="fotos/p3.jpg"></div> 
-            <h5 class="title">Heading for Lorem</h5> 
-            <p>...</p> </li> 
-        </li>
-        <li> <div class="img-holder"><img src="fotos/p4.jpg"></div> 
-            <h5 class="title">Heading for Lorem</h5> 
-            <p>...</p> </li>
-        </li>
-        <li> <div class="img-holder"><img src="fotos/p5.jpg"></div> 
-            <h5 class="title">Heading for Lorem</h5> 
-            <p>...</p> </li>
-        </li>
+        <?php
+            foreach ($clients as $client) {
+        ?>        
+            <li>
+                <div class="img-holder">
+                    <?= Html::img('@web/fotos/'.$client->photo, ['alt' => 'My photo']) ?>
+                </div> 
+                <h5 class="title"><?=$client->title?></h5> 
+                <p>...</p> 
+            </li>
+        <?php
+            }
+        ?>
     </ul>
     
     </div>

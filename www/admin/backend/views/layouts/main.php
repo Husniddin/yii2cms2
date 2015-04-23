@@ -54,7 +54,13 @@ if (Yii::$app->controller->action->id === 'login') {
     </div>
 
     <?= Html::jsFile('/vendor/bower/jquery/dist/jquery.js') ?>
+    
     <?= Html::jsFile('/common/js/yii2/yii.js') ?>
+    <?= Html::jsFile('/common/js/yii2/yii.gridView.js') ?>
+    <?= Html::jsFile('/common/js/yii2/yii.activeForm.js') ?>
+    <?= Html::jsFile('/common/js/yii2/yii.captcha.js') ?>
+    <?= Html::jsFile('/common/js/yii2/yii.validation.js') ?>
+
     <?= Html::jsFile('/vendor/bower/bootstrap/dist/js/bootstrap.js') ?>
     <?= Html::jsFile('/vendor/bower/admin-lte/dist/js/app.min.js') ?>
     

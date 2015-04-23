@@ -19,7 +19,7 @@ use app\components\FooterWidget;
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
-    <?= Html::cssFile('/vendor/bower/bootstrap/dist/css/bootstrap.css') ?>
+    <?= Html::cssFile('/css/bootstrap/bootstrap.css') ?>
     <?= Html::cssFile('/css/default.css') ?>
     <?= Html::cssFile('/css/mystyle.css') ?>
     <?= Html::cssFile('/css/fancybox/source/jquery.fancybox.css?v=2.1.5') ?>
@@ -62,12 +62,16 @@ use app\components\FooterWidget;
 
 	<?= Html::jsFile('/vendor/bower/jquery/dist/jquery.js') ?>
     <?= Html::jsFile('/common/js/yii2/yii.js') ?>
+    <?= Html::jsFile('/common/js/yii2/yii.gridView.js') ?>
+    <?= Html::jsFile('/common/js/yii2/yii.activeForm.js') ?>
+    <?= Html::jsFile('/common/js/yii2/yii.captcha.js') ?>
+    <?= Html::jsFile('/common/js/yii2/yii.validation.js') ?>
     <?= Html::jsFile('/js/fancybox/source/jquery.fancybox.js?v=2.1.5') ?>
     <?= Html::jsFile('/js/jquery.jcarousellite.min.js') ?>
     <?= Html::jsFile('/js/html5.js') ?>
     <?= Html::jsFile('/js/script.js') ?>
     <?= Html::jsFile('/js/myscript.js') ?>
-    <?= Html::jsFile('/vendor/bower/bootstrap/dist/js/bootstrap.js') ?>
+    <?= Html::jsFile('/js/bootstrap/bootstrap.js') ?>
 
     <?php $this->endBody() ?>
 </body>
